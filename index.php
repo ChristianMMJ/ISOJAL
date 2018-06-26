@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
     <title>ISOJAL</title>
@@ -25,9 +24,18 @@
     <meta name="msapplication-square310x310logo" content="img/web/mstile-310x310.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/isojal.css" rel="stylesheet" type="text/css"/>
+    <link href="css/animate.css" rel="stylesheet" type="text/css"/>
     <link href="css/style.css" rel="stylesheet" type="text/css"/>
     <script src="js/fontawesome-all.js" type="text/javascript"></script>
-
+    <style>
+        .w3-bar-item{
+            color: #fff !important;
+        }
+        .w3-button:hover{
+            background-color: #000 !important;
+            color: #fff !important;
+        }
+    </style>
     <body>
 
         <!-- Navbar (sit on top) -->
@@ -53,8 +61,8 @@
         <!-- First Parallax Image with Logo Text -->
         <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
             <div class="w3-display-middle" style="white-space:nowrap;">
-                <img src="img/isojal/ISOJAL_FULL.png" class="imgLogo" alt="" width="950px" />
-<!--                <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">IMPULSO <span class="w3-hide-small">SOCIAL DE</span> JALISCO</span>-->
+                <img src="img/isojal/ISOJAL_FULL.png" class="imgLogo animated fadeIn" alt="" width="950px" />
+<!--                <span class="w3-center  w3-black w3-xlarge w3-wide w3-animate-opacity">IMPULSO <span class="w3-hide-small">SOCIAL DE</span> JALISCO</span>-->
             </div>
         </div>
 
@@ -63,7 +71,7 @@
             <h3 class="w3-center">INTRODUCCIÓN</h3>
             <p class="w3-center"><em>Impulso  Social  de  Jalisco</em></p>
             <p>
-                surge  en  el  año  2011  a  iniciativa  de  sus fundadores con  el propósito de diseñar y
+                Surge  en  el  año  2011  a  iniciativa  de  sus fundadores con  el propósito de diseñar y
                 ejecutar proyectos que favorezcan la generación de capital social en el medio urbano y rural.
                 Aunado a lo anterior y derivado de su integración por profesionistas con
                 experiencia en diversas áreas del conocimiento, nos hemos especializado en la
@@ -73,13 +81,13 @@
                 en los jóvenes en situación de riesgo.
             </p>
             <div class="w3-row">
-                <div class="w3-col m6 w3-center w3-padding-large">
+                <div class="w3-col m6 w3-center ">
                     <p><b><i class="fa fa-user w3-margin-right"></i>Misión</b></p><br>
 <!--                    <img src="img/avatar_hat.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">-->
                 </div>
 
                 <!-- Hide this text on small devices -->
-                <div class="w3-col m6 w3-hide-small w3-padding-large">
+                <div class="w3-col m6 w3-hide-small ">
                     <p>
                         Promover y brindar, mediante un servicio de consultoría, los diagnósticos
                         y la sistematización de experiencias precisas para la evaluación y la toma
@@ -92,13 +100,13 @@
                 </div>
             </div>
             <div class="w3-row">
-                <div class="w3-col m6 w3-center w3-padding-large">
+                <div class="w3-col m6 w3-center ">
                     <p><b><i class="fa fa-user w3-margin-right"></i>Equipo</b></p><br>
 <!--                    <img src="img/avatar_hat.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">-->
                 </div>
 
                 <!-- Hide this text on small devices -->
-                <div class="w3-col m6 w3-hide-small w3-padding-large">
+                <div class="w3-col m6 w3-hide-small ">
                     <p>Nuestro equipo de trabajo está conformado por colaboradores de diversos perfiles
                         académicos y profesionales, tales como: economistas, abogados, agrónomos,
                         psicólogos, administradores  gubernamentales,   contadores,
@@ -107,13 +115,13 @@
                 </div>
             </div>
             <div class="w3-row">
-                <div class="w3-col m6 w3-center w3-padding-large">
+                <div class="w3-col m6 w3-center ">
                     <p><b><i class="fa fa-user w3-margin-right"></i>Experiencia:</b></p><br>
 <!--                    <img src="img/avatar_hat.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">-->
                 </div>
 
                 <!-- Hide this text on small devices -->
-                <div class="w3-col m6 w3-hide-small w3-padding-large">
+                <div class="w3-col m6 w3-hide-small ">
                     <p>La organización cuenta con amplia experiencia en ejecución de proyectos sociales y de evaluación y diagnósticos de programas públicos.</p>
                 </div>
             </div>
