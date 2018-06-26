@@ -27,6 +27,7 @@
     <link href="css/animate.css" rel="stylesheet" type="text/css"/>
     <link href="css/style.css" rel="stylesheet" type="text/css"/>
     <script src="js/fontawesome-all.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <style>
         .w3-bar-item{
             color: #fff !important;
@@ -40,7 +41,7 @@
 
         <!-- Navbar (sit on top) -->
         <div class="w3-top">
-            <div class="w3-bar" id="myNavbar">
+            <div class="w3-bar animated fadeInDown" id="myNavbar">
                 <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
                     <i class="fa fa-bars"></i>
                 </a>
@@ -51,7 +52,7 @@
             </div>
 
             <!-- Navbar on small screens -->
-            <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
                 <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">INICIO</a>
                 <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PROYECTOS</a>
                 <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACTO</a>
@@ -172,44 +173,40 @@
             <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
             <div class="w3-row-padding w3-center">
                 <div class="w3-col m3">
-                    <img src="img/A.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+                    <img src="img/A.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Ilustración 1">
                 </div>
 
                 <div class="w3-col m3">
-                    <img src="img/B.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+                    <img src="img/B.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Ilustración 2">
                 </div>
 
                 <div class="w3-col m3">
-                    <img src="img/C.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
+                    <img src="img/C.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Ilustración 3">
                 </div>
 
                 <div class="w3-col m3">
-                    <img src="img/D.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
+                    <img src="img/D.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="QuIlustración 4">
                 </div>
             </div>
 
             <div class="w3-row-padding w3-center w3-section">
                 <div class="w3-col m3">
-                    <img src="img/E.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+                    <img src="img/E.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Ilustración 5">
                 </div>
 
                 <div class="w3-col m3">
-                    <img src="img/G.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
+                    <img src="img/G.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Ilustración 6">
                 </div>
 
                 <div class="w3-col m3">
-                    <img src="img/H.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
-                </div>
-
-                <div class="w3-col m3">
-                    <img src="img/I.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+                    <img src="img/H.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Ilustración 7">
                 </div>
             </div>
         </div>
 
         <!-- Modal for full size images on click-->
         <div id="modal01" class="w3-modal w3-black" onclick="this.style.display = 'none'">
-            <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+            <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-times"></i></span>
             <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
                 <img id="img01" class="w3-image">
                 <p id="caption" class="w3-opacity w3-large"></p>
@@ -263,6 +260,10 @@
 
         <!-- Add Google Maps -->
         <script>
+            window.sr = ScrollReveal();
+            sr.reveal('p');
+            sr.reveal('.w3-col');
+            sr.reveal('.w3-center');
 
             // Modal Image Gallery
             function onClick(element) {
@@ -279,9 +280,9 @@
             function myFunction() {
                 var navbar = document.getElementById("myNavbar");
                 if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                    navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+                    navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-black";
                 } else {
-                    navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+                    navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-black", "");
                 }
             }
 
