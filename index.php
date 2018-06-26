@@ -53,7 +53,7 @@
         <!-- First Parallax Image with Logo Text -->
         <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
             <div class="w3-display-middle" style="white-space:nowrap;">
-                <img src="img/isojal/ISOJAL_FULL.png" alt="" />
+                <img src="img/isojal/ISOJAL_FULL.png" class="imgLogo" alt="" width="950px" />
 <!--                <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">IMPULSO <span class="w3-hide-small">SOCIAL DE</span> JALISCO</span>-->
             </div>
         </div>
@@ -221,35 +221,25 @@
         <div class="w3-content w3-container w3-padding-64" id="contact">
             <h3 class="w3-center">CONTÁCTANOS</h3>
             <p class="w3-center"><em>Mapa de ubicación</em></p>
-            <div class="w3-row w3-padding-32 w3-section">
-                <div class="w3-col m4 w3-container">
-                    <!-- Add Google Maps -->
-                    <div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.158543393763!2d-103.36536228483874!3d20.703785604168097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ae293fbe5871%3A0xdd04892797fbb8e1!2sMar+Blanco+1574%2C+Lomas+del+Country%2C+44610+Guadalajara%2C+Jal.!5e0!3m2!1ses!2smx!4v1529247572427" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </div>
+            <div class="map-responsive">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.158543393763!2d-103.36536228483874!3d20.703785604168097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ae293fbe5871%3A0xdd04892797fbb8e1!2sMar+Blanco+1574%2C+Lomas+del+Country%2C+44610+Guadalajara%2C+Jal.!5e0!3m2!1ses!2smx!4v1529247572427" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div class="w3-row-padding w3-center">
+                <br>
+                <div class="w3-large w3-margin-bottom">
+                    <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Guadalajara, Jalisco, México<br>
+                    <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Tel: +33 30700348<br>
+                    <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: impulsosocialjalisco@gmail.com<br>
                 </div>
-                <div class="w3-col m8 w3-panel">
-                    <div class="w3-large w3-margin-bottom">
-                        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Guadalajara, Jalisco, México<br>
-                        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Tel: +33 30700348<br>
-                        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: impulsosocialjalisco@gmail.com<br>
-                    </div>
-                    <p>Mar Blanco #1574, Col. Lomas del Country, CP 44610</p>
-                    <form action="/action_page.php" target="_blank">
-                        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-                            <div class="w3-half">
-                                <input class="w3-input w3-border" type="text" placeholder="Nombre" required name="Name">
-                            </div>
-                            <div class="w3-half">
-                                <input class="w3-input w3-border" type="text" placeholder="Correo" required name="Email">
-                            </div>
-                        </div>
-                        <input class="w3-input w3-border" type="text" placeholder="Mensaje" required name="Message">
-                        <button class="w3-button w3-black w3-right w3-section" type="submit">
-                            <i class="fa fa-paper-plane"></i> ENVIAR MENSAJE
-                        </button>
-                    </form>
-                </div>
+                <p>Mar Blanco #1574, Col. Lomas del Country, CP 44610</p>
+                <form action="/action_page.php" target="_blank">
+                    <input class="w3-input w3-border" type="text" placeholder="Nombre" required name="Name" style="margin-bottom: 1em;">
+                    <input class="w3-input w3-border" type="text" placeholder="Correo" required name="Email" style="margin-bottom: 1em;">
+                    <input class="w3-input w3-border" type="text" placeholder="Mensaje" required name="Message" style="margin-bottom: 1em;">
+                    <button class="w3-button w3-black w3-right w3-section" type="submit">
+                        <i class="fa fa-paper-plane"></i> ENVIAR MENSAJE
+                    </button>
+                </form>
             </div>
         </div>
 
