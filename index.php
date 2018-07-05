@@ -45,22 +45,22 @@
                 <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
                     <i class="fa fa-bars"></i>
                 </a>
-                <a href="#home" class="w3-bar-item w3-button">INICIO</a>
-                <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> CURRICULUM</a>
-                <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PROYECTOS</a>
-                <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACTO</a>
+                <a href="#inicio" class="w3-bar-item w3-button"><i class="fa fa-home"></i> INICIO</a>
+                <a href="#nosotros" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> NOSOTROS</a>
+                <a href="#proyectos" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PROYECTOS</a>
+                <a href="#contacto" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACTO</a>
             </div>
 
             <!-- Navbar on small screens -->
             <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
-                <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">INICIO</a>
-                <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PROYECTOS</a>
-                <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACTO</a>
+                <a href="#nosotros" class="w3-bar-item w3-button" onclick="toggleFunction()">INICIO</a>
+                <a href="#proyectos" class="w3-bar-item w3-button" onclick="toggleFunction()">PROYECTOS</a>
+                <a href="#contacto" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACTO</a>
             </div>
         </div>
 
         <!-- First Parallax Image with Logo Text -->
-        <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+        <div class="bgimg-1 w3-display-container w3-opacity-min" id="inicio">
             <div class="w3-display-middle" style="white-space:nowrap;">
                 <img src="img/isojal/ISOJAL_FULL.png" class="imgLogo animated fadeIn" alt="" width="950px" />
 <!--                <span class="w3-center  w3-black w3-xlarge w3-wide w3-animate-opacity">IMPULSO <span class="w3-hide-small">SOCIAL DE</span> JALISCO</span>-->
@@ -68,7 +68,7 @@
         </div>
 
         <!-- Container (About Section) -->
-        <div class="w3-content w3-container w3-padding-64" id="about">
+        <div class="w3-content w3-container w3-padding-64" id="nosotros">
             <h3 class="w3-center">INTRODUCCIÓN</h3>
             <p class="w3-center"><em>Impulso  Social  de  Jalisco</em></p>
             <p>
@@ -126,7 +126,7 @@
                     <p>La organización cuenta con amplia experiencia en ejecución de proyectos sociales y de evaluación y diagnósticos de programas públicos.</p>
                 </div>
             </div>
-            <p class="w3-large w3-center w3-padding-16">AVANCE EN PROYECTOS</p>
+            <p class="w3-large w3-center w3-padding-16">PROYECTOS REALIZADOS</p>
             <p class="w3-wide"><i class="fa fa-camera"></i> Impulso a la economía</p>
             <div class="w3-light-grey">
                 <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
@@ -168,7 +168,7 @@
         </div>
 
         <!-- Container (Portfolio Section) -->
-        <div class="w3-content w3-container w3-padding-64" id="portfolio"> 
+        <div class="w3-content w3-container w3-padding-64" id="proyectos">
 
             <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
             <div class="w3-row-padding w3-center">
@@ -221,7 +221,7 @@
         </div>
 
         <!-- Container (Contact Section) -->
-        <div class="w3-content w3-container w3-padding-64" id="contact">
+        <div class="w3-content w3-container w3-padding-64" id="contacto">
             <h3 class="w3-center">CONTÁCTANOS</h3>
             <p class="w3-center"><em>Mapa de ubicación</em></p>
             <div class="map-responsive">
@@ -255,7 +255,7 @@
                 <i class="fab fa-twitter w3-hover-opacity"></i>
                 <i class="fab fa-linkedin w3-hover-opacity"></i>
             </div>
-            <p>Impulsado por <a href="https://www.jalisco.gob.mx/" title="Gobierno de Jalisco" target="_blank" class="w3-hover-text-green">Gobierno de Jal.</a></p>
+            <p>Impulsado por <a href="https://www.gob.mx/sagarpa" title="Gobierno de Jalisco" target="_blank" class="w3-hover-text-green">SAGARPA</a></p>
         </footer>
 
         <!-- Add Google Maps -->
