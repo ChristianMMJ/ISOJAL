@@ -262,8 +262,9 @@
         <script>
             window.sr = ScrollReveal();
             sr.reveal('p');
-            sr.reveal('.w3-col');
-            sr.reveal('.w3-center');
+            sr.reveal('h3');
+            sr.reveal('input');
+            sr.reveal('button');
 
             // Modal Image Gallery
             function onClick(element) {
