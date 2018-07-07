@@ -215,7 +215,7 @@
         </div>
 
         <!-- Second Parallax Image with Portfolio Text -->
-        <div class="bgimg-2 w3-display-container w3-opacity-min">
+        <div class=" w3-display-container w3-opacity-min">
             <div class="w3-display-middle">
                 <span class="w3-xxlarge w3-text-white w3-wide">JUNTOS CONSTRUIMOS EL JALISCO QUE QUEREMOS </span>
             </div>
@@ -225,9 +225,9 @@
         <div class="w3-content w3-container w3-padding-64" id="proyectos">
             <!-- Portfolio Gallery Grid -->
             <div class="w3-row">
-                <div class="w3-col s12 m6 l6 w3-justify">
+                <div class="w3-col s12 m5 l5 w3-justify">
                     <div class="w3-display-container">
-                        <img src="img/P1/P1.png" alt="1" style="width:100%; cursor: pointer;" class="w3-image w3-round sr" 
+                        <img src="img/P1/P1.jpg" alt="1" style="width:100%; cursor: pointer;" class="w3-image w3-round sr" 
                              onclick="document.getElementById('P1').style.display = 'block'">
                         <div class="w3-display-topleft w3-container w3-black"><h3>Proyecto 1</h3></div>
                     </div>
@@ -239,9 +239,10 @@
                         </button>
                     </div> 
                 </div>
-                <div class="w3-col s12 m6 l6 w3-justify">
+                <div class="w3-col s12 m1 l1 w3-justify w3-padding-small"></div>
+                <div class="w3-col s12 m5 l5 w3-justify">
                     <div class="w3-display-container">
-                        <img src="img/P2/P2.png" alt="2" style="width:100%" class="w3-image w3-round sr"
+                        <img src="img/P2/P2.jpg" alt="2" style="width:100%" class="w3-image w3-round sr"
                              onclick="document.getElementById('P2').style.display = 'block'">
                         <div class="w3-display-topleft w3-container w3-black"><h3>Proyecto 2</h3></div>
                     </div>
@@ -255,9 +256,9 @@
                 </div>  
             </div>  
             <div class="w3-row">
-                <div class="w3-col s12 m6 l6 w3-justify">
+                <div class="w3-col s12 m5 l5 w3-justify">
                     <div class="w3-display-container">
-                        <img src="img/P3/P3.png" alt="3" style="width:100%" class="w3-image w3-round sr"
+                        <img src="img/P3/P3.jpg" alt="3" style="width:100%" class="w3-image w3-round sr"
                              onclick="document.getElementById('P3').style.display = 'block'">
                         <div class="w3-display-topleft w3-container w3-black"><h3><h3>Proyecto 3</h3></h3></div>
                     </div>
@@ -269,9 +270,10 @@
                         </button>
                     </div> 
                 </div>  
-                <div class="w3-col s12 m6 l6 w3-justify">
+                <div class="w3-col s12 m1 l1 w3-justify w3-padding-small"></div>
+                <div class="w3-col s11 m5 l5 w3-justify">
                     <div class="w3-display-container">
-                        <img src="img/P4/P4.png" alt="Lights" style="width:100%" class="w3-image w3-round sr"
+                        <img src="img/P4/P4.jpg" alt="Lights" style="width:100%" class="w3-image w3-round sr"
                              onclick="document.getElementById('P4').style.display = 'block'">
                         <div class="w3-display-topleft w3-container w3-black"><h3>Proyecto 4</h3></div>
                     </div>
@@ -285,9 +287,9 @@
                 </div> 
             </div> 
             <div class="w3-row">
-                <div class="w3-col s12 m6 l6 w3-justify">
+                <div class="w3-col s12 m5 l5 w3-justify">
                     <div class="w3-display-container">
-                        <img src="img/P5/P5.png" alt="Lights" style="width:100%" class="w3-image w3-round sr"
+                        <img src="img/P5/P5.jpg" alt="Lights" style="width:100%" class="w3-image w3-round sr"
                              onclick="document.getElementById('P5').style.display = 'block'">
                         <div class="w3-display-topleft w3-container w3-black"><h3>Proyecto 5</h3></div>
                     </div>
@@ -299,9 +301,10 @@
                         </button>
                     </div>
                 </div> 
-                <div class="w3-col s12 m6 l6 w3-justify">
+                <div class="w3-col s12 m1 l1 w3-justify w3-padding-small"></div>
+                <div class="w3-col s12 m5 l5 w3-justify">
                     <div class="w3-display-container"> 
-                        <img src="img/P6/P61.png" alt="Lights" style="width:100%" class="w3-image w3-round sr"
+                        <img src="img/P6/P6.jpg" alt="Lights" style="width:100%" class="w3-image w3-round sr"
                              onclick="document.getElementById('P6').style.display = 'block'">
                         <div class="w3-display-topleft w3-container w3-black"><h3>Proyecto 6</h3></div>
                     </div>
@@ -317,7 +320,7 @@
             <div class="w3-row">
                 <div class="w3-col s12 m12 l12 w3-justify">
                     <div class="w3-display-container"> 
-                        <img src="img/P7/P7.png" alt="Lights" style="width:100%" class="w3-image w3-round sr"
+                        <img src="img/P7/P7.jpg" alt="Lights" style="width:100%" class="w3-image w3-round sr"
                              onclick="document.getElementById('P7').style.display = 'block'">
                         <div class="w3-display-topleft w3-container w3-black"><h3>Proyecto 7</h3></div>
                     </div>
@@ -377,7 +380,7 @@
             </div>
         </div>
         <!-- Footer -->
-        <footer class="w3-justify w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+        <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
             <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Regresar al Inicio</a>
             <div class="w3-xlarge w3-section">
                 <i class="fab fa-facebook w3-hover-opacity"></i>
