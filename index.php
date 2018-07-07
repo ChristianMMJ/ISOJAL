@@ -215,7 +215,7 @@
         </div>
 
         <!-- Second Parallax Image with Portfolio Text -->
-        <div class=" w3-display-container w3-opacity-min">
+        <div class="bgimg-2 w3-display-container w3-opacity-min">
             <div class="w3-display-middle">
                 <span class="w3-xxlarge w3-text-white w3-wide">JUNTOS CONSTRUIMOS EL JALISCO QUE QUEREMOS </span>
             </div>
