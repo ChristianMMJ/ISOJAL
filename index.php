@@ -36,6 +36,60 @@
             background-color: #000 !important;
             color: #fff !important;
         }
+        /*thumbs*/
+
+        .row {
+            margin: 8px -16px;
+        }
+
+        /* Add padding BETWEEN each column */
+        .row,
+        .row > .column {
+            padding: 8px;
+        }
+
+        /* Create four equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 25%;
+        }
+
+        /* Clear floats after rows */ 
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Content */
+        .content {
+            background-color: white;
+            padding: 10px;
+        }
+
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 900px) {
+            .column {
+                width: 50%;
+            }
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+            }
+        }
+        .sr{
+            cursor: pointer;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .w3-modal{
+            padding-top: 0px;
+        }
+        body.modal-open {
+            overflow: hidden;
+        }
     </style>
     <body>
 
@@ -63,14 +117,14 @@
         <div class="bgimg-1 w3-display-container w3-opacity-min" id="inicio">
             <div class="w3-display-middle" style="white-space:nowrap;">
                 <img src="img/isojal/ISOJAL_FULL.png" class="imgLogo animated fadeIn" alt="" width="950px" />
-<!--                <span class="w3-center  w3-black w3-xlarge w3-wide w3-animate-opacity">IMPULSO <span class="w3-hide-small">SOCIAL DE</span> JALISCO</span>-->
+<!--                <span class="w3-justify  w3-black w3-xlarge w3-wide w3-animate-opacity">IMPULSO <span class="w3-hide-small">SOCIAL DE</span> JALISCO</span>-->
             </div>
         </div>
 
         <!-- Container (About Section) -->
         <div class="w3-content w3-container w3-padding-64" id="nosotros">
-            <h3 class="w3-center">INTRODUCCIÓN</h3>
-            <p class="w3-center"><em>Impulso  Social  de  Jalisco</em></p>
+            <h3 class="w3-justify">INTRODUCCIÓN</h3>
+            <p class="w3-justify"><em>Impulso  Social  de  Jalisco</em></p>
             <p>
                 Surge  en  el  año  2011  a  iniciativa  de  sus fundadores con  el propósito de diseñar y
                 ejecutar proyectos que favorezcan la generación de capital social en el medio urbano y rural.
@@ -82,7 +136,7 @@
                 en los jóvenes en situación de riesgo.
             </p>
             <div class="w3-row">
-                <div class="w3-col m6 w3-center ">
+                <div class="w3-col m6 w3-justify ">
                     <p><b><i class="fa fa-user w3-margin-right"></i>Misión</b></p><br>
 <!--                    <img src="img/avatar_hat.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">-->
                 </div>
@@ -101,7 +155,7 @@
                 </div>
             </div>
             <div class="w3-row">
-                <div class="w3-col m6 w3-center ">
+                <div class="w3-col m6 w3-justify ">
                     <p><b><i class="fa fa-user w3-margin-right"></i>Equipo</b></p><br>
 <!--                    <img src="img/avatar_hat.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">-->
                 </div>
@@ -116,7 +170,7 @@
                 </div>
             </div>
             <div class="w3-row">
-                <div class="w3-col m6 w3-center ">
+                <div class="w3-col m6 w3-justify ">
                     <p><b><i class="fa fa-user w3-margin-right"></i>Experiencia:</b></p><br>
 <!--                    <img src="img/avatar_hat.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">-->
                 </div>
@@ -126,22 +180,22 @@
                     <p>La organización cuenta con amplia experiencia en ejecución de proyectos sociales y de evaluación y diagnósticos de programas públicos.</p>
                 </div>
             </div>
-            <p class="w3-large w3-center w3-padding-16">PROYECTOS REALIZADOS</p>
+            <p class="w3-large w3-justify w3-padding-16">PROYECTOS REALIZADOS</p>
             <p class="w3-wide"><i class="fa fa-camera"></i> Impulso a la economía</p>
             <div class="w3-light-grey">
-                <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+                <div class="w3-container w3-padding-small w3-dark-grey w3-justify" style="width:90%">90%</div>
             </div>
             <p class="w3-wide"><i class="fa fa-laptop"></i> Impulso a la cultura</p>
             <div class="w3-light-grey">
-                <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+                <div class="w3-container w3-padding-small w3-dark-grey w3-justify" style="width:85%">85%</div>
             </div>
             <p class="w3-wide"><i class="fa fa-photo"></i> Impulso a la Educación</p>
             <div class="w3-light-grey">
-                <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+                <div class="w3-container w3-padding-small w3-dark-grey w3-justify" style="width:75%">75%</div>
             </div>
         </div>
 
-        <div class="w3-row w3-center w3-dark-grey w3-padding-16">
+        <div class="w3-row w3-justify w3-dark-grey w3-padding-16">
             <div class="w3-quarter w3-section">
                 <span class="w3-xlarge">14+</span><br>
                 Educación
@@ -169,49 +223,126 @@
 
         <!-- Container (Portfolio Section) -->
         <div class="w3-content w3-container w3-padding-64" id="proyectos">
-
-            <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-            <div class="w3-row-padding w3-center">
-                <div class="w3-col m3">
-                    <img src="img/A.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Ilustración 1">
+            <!-- Portfolio Gallery Grid -->
+            <div class="w3-row">
+                <div class="w3-col s12 m6 l6 w3-justify">
+                    <div class="w3-display-container">
+                        <img src="img/P1/P1.png" alt="1" style="width:100%; cursor: pointer;" class="w3-image w3-round sr" 
+                             onclick="document.getElementById('P1').style.display = 'block'">
+                        <div class="w3-display-topleft w3-container w3-black"><h3>Proyecto 1</h3></div>
+                    </div>
+                    <div class="content">
+                        <h3>Métodos alternativos de producción</h3>
+                        <p>Se han realizado talleres de capacitación en aquellas comunidades en donde es complicado acceder a espacios abiertos de cultivo para impulsar el uso de métodos alternativos de producción, mediante los cuales los beneficiarios han aprendido los conceptos básicos de la hidroponia y su funcionamiento para producir sus propias hortalizas mediante el establecimiento de huertos familiares, mismos que se han establecido en diversas comunidades de municipios como: Zapopan, Poncitlán, Jamay, Cuquío, Ixtlahuacán del Río, Villa Corona, Ocotlán, Gómez Farías, Autlán de Navarro, Magdalena, San Marcos, Lagos de Moreno, sólo por mencionar algunos.</p>
+                        <button class="w3-button w3-black w3-right w3-section" type="submit">
+                            <i class="fa fa-eye"></i> Ver más...
+                        </button>
+                    </div> 
                 </div>
-
-                <div class="w3-col m3">
-                    <img src="img/B.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Ilustración 2">
-                </div>
-
-                <div class="w3-col m3">
-                    <img src="img/C.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Ilustración 3">
-                </div>
-
-                <div class="w3-col m3">
-                    <img src="img/D.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="QuIlustración 4">
-                </div>
-            </div>
-
-            <div class="w3-row-padding w3-center w3-section">
-                <div class="w3-col m3">
-                    <img src="img/E.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Ilustración 5">
-                </div>
-
-                <div class="w3-col m3">
-                    <img src="img/G.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Ilustración 6">
-                </div>
-
-                <div class="w3-col m3">
-                    <img src="img/H.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Ilustración 7">
+                <div class="w3-col s12 m6 l6 w3-justify">
+                    <div class="w3-display-container">
+                        <img src="img/P2/P2.png" alt="2" style="width:100%" class="w3-image w3-round sr"
+                             onclick="document.getElementById('P2').style.display = 'block'">
+                        <div class="w3-display-topleft w3-container w3-black"><h3>Proyecto 2</h3></div>
+                    </div>
+                    <div class="content">
+                        <h3>Producción y Engorda de Tilapia</h3>
+                        <p>Se han elaborado proyectos productivos para la instalación de infraestructura para la producción y engorda de tilapia, con lo cual se ha logrado mejorar la dieta nutrimental de 100 familias, dotando a los beneficiarios no solo de los insumos, sino también de un completo programa de capacitación para que ellos mismos se dediquen de forma autónoma a esta actividad.</p>
+                        <button class="w3-button w3-black w3-right w3-section" type="submit">
+                            <i class="fa fa-eye"></i> Ver más...
+                        </button>
+                    </div>
+                </div>  
+            </div>  
+            <div class="w3-row">
+                <div class="w3-col s12 m6 l6 w3-justify">
+                    <div class="w3-display-container">
+                        <img src="img/P3/P3.png" alt="3" style="width:100%" class="w3-image w3-round sr"
+                             onclick="document.getElementById('P3').style.display = 'block'">
+                        <div class="w3-display-topleft w3-container w3-black"><h3><h3>Proyecto 3</h3></h3></div>
+                    </div>
+                    <div class="content">
+                        <h3>Producción Autosustentable de Hortalizas</h3>
+                        <p>En conjunto con la Secretaria de Medio Ambiente y Recursos Naturales, se desarrolló un proyecto de producción de hortalizas totalmente autosustentable para habitantes de la zona de la barranca en Zapopan, mediante el cual se instaló un sistema de agricultura protegida en microclima, con sistema de riego focalizado por goteo, mismo que funciona gracias a un método de captación de agua pluvial y energía solar.</p>
+                        <button class="w3-button w3-black w3-right w3-section" type="submit">
+                            <i class="fa fa-eye"></i> Ver más...
+                        </button>
+                    </div> 
+                </div>  
+                <div class="w3-col s12 m6 l6 w3-justify">
+                    <div class="w3-display-container">
+                        <img src="img/P4/P4.png" alt="Lights" style="width:100%" class="w3-image w3-round sr"
+                             onclick="document.getElementById('P4').style.display = 'block'">
+                        <div class="w3-display-topleft w3-container w3-black"><h3>Proyecto 4</h3></div>
+                    </div>
+                    <div class="content">
+                        <h3>Instalación de Invernaderos</h3>
+                        <p>Se dotó de infraestructura adecuada para la autogeneración de alimentos, instalando varios invernaderos para la producción de diferentes tipos de hortalizas en municipios como Teuchitlán y San Marcos, por citar algunos</p>
+                        <button class="w3-button w3-black w3-right w3-section" type="submit">
+                            <i class="fa fa-eye"></i> Ver más...
+                        </button>
+                    </div>
+                </div> 
+            </div> 
+            <div class="w3-row">
+                <div class="w3-col s12 m6 l6 w3-justify">
+                    <div class="w3-display-container">
+                        <img src="img/P5/P5.png" alt="Lights" style="width:100%" class="w3-image w3-round sr"
+                             onclick="document.getElementById('P5').style.display = 'block'">
+                        <div class="w3-display-topleft w3-container w3-black"><h3>Proyecto 5</h3></div>
+                    </div>
+                    <div class="content">
+                        <h3>Proyectos de Valor Agregado</h3>
+                        <p>Se han impulsado diversos proyectos referentes a la aplicación de valor agregado en la producción, usando materia prima de la cual disponen los beneficiarios, como es el caso de capacitación para la elaboración de mermeladas y encurtidos artesanales.</p>
+                        <button class="w3-button w3-black w3-right w3-section" type="submit">
+                            <i class="fa fa-eye"></i> Ver más...
+                        </button>
+                    </div>
+                </div> 
+                <div class="w3-col s12 m6 l6 w3-justify">
+                    <div class="w3-display-container"> 
+                        <img src="img/P6/P61.png" alt="Lights" style="width:100%" class="w3-image w3-round sr"
+                             onclick="document.getElementById('P6').style.display = 'block'">
+                        <div class="w3-display-topleft w3-container w3-black"><h3>Proyecto 6</h3></div>
+                    </div>
+                    <div class="content">
+                        <h3>Elaboración de productos lácteos</h3>
+                        <p>En municipios de los altos del estado, como Lagos de Moreno, Tepatitlán y Teocaltiche se han desarrollado talleres sobre elaboración de diferentes tipos de quesos y yogurt, aprovechando la vocación ganadera de la región y la materia prima existente, facilitándoles el generar de esta forma, productos con valor agregado que permiten a nuestros beneficiarios capacitados obtener un mejor ingreso para sus familias, además de poder aprovechar la proteína, incluyéndola en su dieta diaria.</p>
+                        <button class="w3-button w3-black w3-right w3-section" type="submit">
+                            <i class="fa fa-eye"></i> Ver más...
+                        </button>
+                    </div> 
+                </div> 
+            </div> 
+            <div class="w3-row">
+                <div class="w3-col s12 m12 l12 w3-justify">
+                    <div class="w3-display-container"> 
+                        <img src="img/P7/P7.png" alt="Lights" style="width:100%" class="w3-image w3-round sr"
+                             onclick="document.getElementById('P7').style.display = 'block'">
+                        <div class="w3-display-topleft w3-container w3-black"><h3>Proyecto 7</h3></div>
+                    </div>
+                    <div class="content">
+                        <h3>Talleres y Foros de Capacitación</h3>
+                        <p>Se han desarrollado diferentes proyectos de capacitación en diferentes áreas, desde la elaboración de proyectos productivos, identificación de planes de negocio, desarrollo de planes de negocio, emprendimiento productivo, financiamiento en el medio rural, así como talleres para dar a conocer las reglas de operación de diversos programas.</p>
+                        <button class="w3-button w3-black w3-right w3-section" type="submit">
+                            <i class="fa fa-eye"></i> Ver más...
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <!-- Modal for full size images on click-->
-        <div id="modal01" class="w3-modal w3-black" onclick="this.style.display = 'none'">
-            <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-times"></i></span>
-            <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-                <img id="img01" class="w3-image">
+        <!-- Modal for full size images on click--> 
+        <?php
+        for ($index = 1; $index < 8; $index++) {
+            print '<div id="P' . $index . '" class="w3-modal w3-black" onclick="this.style.display = \'none\'">
+                <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-times"></i></span>
+            <div class="w3-modal-content w3-animate-zoom w3-justify w3-transparent w3-padding-64">
+                <img id="img0' . $index . '" class="w3-image" src="img/P' . $index . '/P' . $index . '.jpg">
                 <p id="caption" class="w3-opacity w3-large"></p>
             </div>
-        </div>
+        </div>';
+        }
+        ?>
 
         <!-- Third Parallax Image with Portfolio Text -->
         <div class="bgimg-3 w3-display-container w3-opacity-min">
@@ -222,12 +353,12 @@
 
         <!-- Container (Contact Section) -->
         <div class="w3-content w3-container w3-padding-64" id="contacto">
-            <h3 class="w3-center">CONTÁCTANOS</h3>
-            <p class="w3-center"><em>Mapa de ubicación</em></p>
+            <h3 class="w3-justify">CONTÁCTANOS</h3>
+            <p class="w3-justify"><em>Mapa de ubicación</em></p>
             <div class="map-responsive">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.158543393763!2d-103.36536228483874!3d20.703785604168097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ae293fbe5871%3A0xdd04892797fbb8e1!2sMar+Blanco+1574%2C+Lomas+del+Country%2C+44610+Guadalajara%2C+Jal.!5e0!3m2!1ses!2smx!4v1529247572427" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
-            <div class="w3-row-padding w3-center">
+            <div class="w3-row-padding w3-justify">
                 <br>
                 <div class="w3-large w3-margin-bottom">
                     <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Guadalajara, Jalisco, México<br>
@@ -245,9 +376,8 @@
                 </form>
             </div>
         </div>
-
         <!-- Footer -->
-        <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+        <footer class="w3-justify w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
             <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Regresar al Inicio</a>
             <div class="w3-xlarge w3-section">
                 <i class="fab fa-facebook w3-hover-opacity"></i>
@@ -265,6 +395,7 @@
             sr.reveal('h3');
             sr.reveal('input');
             sr.reveal('button');
+            sr.reveal('.sr');
 
             // Modal Image Gallery
             function onClick(element) {
@@ -276,7 +407,7 @@
 
             // Change style of navbar on scroll
             window.onscroll = function () {
-                myFunction()
+                myFunction();
             };
             function myFunction() {
                 var navbar = document.getElementById("myNavbar");
@@ -290,12 +421,12 @@
             // Used to toggle the menu on small screens when clicking on the menu button
             function toggleFunction() {
                 var x = document.getElementById("navDemo");
-                if (x.className.indexOf("w3-show") == -1) {
+                if (x.className.indexOf("w3-show") === -1) {
                     x.className += " w3-show";
                 } else {
                     x.className = x.className.replace(" w3-show", "");
                 }
             }
-        </script>
+        </script> 
     </body>
 </html>
